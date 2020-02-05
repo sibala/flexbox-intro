@@ -1,11 +1,13 @@
-/* Flexbox conatainer */
 .container {
   margin: 20px;
   border: 1px solid #333;
   width: 30%;
   height: 300px;
   display: flex; /* or inline-flex */
-  
+}
+
+/* Flexbox conatainer */
+.flex-container {
   /*flex-direction: row;/*row (default)| row-reverse | column | column-reverse*/
   /*flex-wrap: wrap; /*nowrap (default) | wrap | wrap-reverse*/
   flex-flow: row wrap;/*<‘flex-direction’> || <‘flex-wrap’>*/
@@ -20,8 +22,8 @@
 }
 
 section {
+	width: 100px;
 	height: 50px;
-	width: 150px;
 }
 
 .box1 {
@@ -39,3 +41,28 @@ section {
 .box4 {
 	background-color: lightgreen;
 }
+
+/* Flexbox items */
+.flex-items {
+}
+
+.box5 {
+	background-color: pink;
+	order: 0;
+	flex: 20 1 50px;
+}
+
+.box6 {
+	background-color: lightblue;
+	order: 3;
+	/*flex-grow: 1;
+	flex-shrink: 5;
+	flex-basis: 50px;*/
+	flex: 10 1 50px;/*none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]*/
+  align-self: center; /*auto | flex-start | flex-end | center | baseline | stretch;*/
+}
+
+
+
+
+
