@@ -1,0 +1,42 @@
+/* Flexbox conatainer */
+.container {
+  margin: 20px;
+  border: 1px solid #333;
+  width: 30%;
+  height: 300px;
+  display: flex; /* or inline-flex */
+  
+  /*flex-direction: row;/*row (default)| row-reverse | column | column-reverse*/
+  /*flex-wrap: wrap; /*nowrap (default) | wrap | wrap-reverse*/
+  flex-flow: row wrap;/*<‘flex-direction’> || <‘flex-wrap’>*/
+
+  /* Defines the alignment of flex items in the main axis*/
+  justify-content: center; /*flex-start (default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;*/
+
+  /* Defines the alignment of flex items in the cross axis*/
+  align-items: center; /*stretch (default)| flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;*/
+
+  align-content: stretch;/*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;*/
+
+}
+
+section {
+	height: 50px;
+	width: 150px;
+}
+
+.box1 {
+	background-color: pink;
+}
+
+.box2 {
+	background-color: lightblue;
+}
+
+.box3 {
+	background-color: beige;
+}
+
+.box4 {
+	background-color: lightgreen;
+}
